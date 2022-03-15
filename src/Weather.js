@@ -7,19 +7,28 @@ export default function Weather() {
       <form>
         <div className="row">
           <div className="col-8">
-            <input type="search" placeholder="Search for a city..." />
+            <input
+              type="search"
+              placeholder="Search for a city..."
+              autoComplete="off"
+              className="form-search search"
+            />
           </div>
           <div className="col-2">
-            <input type="submit" value="Search" />
+            <input
+              type="submit"
+              value="Search"
+              className="form-submit button"
+            />
           </div>
           <div className="col-2">
-            <button>Current</button>
+            <button className="form-submit button">Current</button>
           </div>
         </div>
       </form>
-      <div>Saturday, 17:13</div>
+      <div className="date-time">Saturday, 17:13</div>
       <h1>Gloucester</h1>
-      <div className="row">
+      <div className="row middle">
         <div className="col">11°C</div>
         <div className="col">
           <img

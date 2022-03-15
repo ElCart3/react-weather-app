@@ -6,19 +6,23 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
-        <footer>
-          <small>
-            This project is coded by Ellie Carter and is{" "}
-            <a
-              href="https://github.com/ElCart3/react-weather-app"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              open-sourced on Github
-            </a>
-          </small>
-        </footer>
+        <div className="wrapper">
+          <div className="weather-app">
+            <Weather />
+            <footer>
+              <small>
+                This project is coded by Ellie Carter and is{" "}
+                <a
+                  href="https://github.com/ElCart3/react-weather-app"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  open-sourced on Github
+                </a>
+              </small>
+            </footer>
+          </div>
+        </div>
       </div>
     </div>
   );
