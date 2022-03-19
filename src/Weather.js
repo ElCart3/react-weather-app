@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import FormattedDate from "./FormattedDate.js";
+import WeatherInfo from "./WeatherInfo.js";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -14,7 +14,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       feel: response.data.main.feels_like,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       loaded: true,
@@ -45,35 +45,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <div className="date-time">
-          <FormattedDate date={weatherData.date} />
-        </div>
-        <h1>{weatherData.city}</h1>
-        <div className="row middle">
-          <div className="col d-flex weather-temperature align-items-center">
-            <div className="col offset-1">
-              <span className="current-temp">
-                {Math.round(weatherData.temperature)}
-              </span>
-              <span className="units">°C</span>
-            </div>
-            <div className="col">
-              <img src={weatherData.icon} alt={weatherData.description} />
-            </div>
-          </div>
-          <div className="col-4">
-            <div className="details">
-              <ul>
-                <li>
-                  <strong className="description">few clouds</strong>
-                </li>
-                <li>Feels like: {Math.round(weatherData.feel)}°C</li>
-                <li>Wind speed: {Math.round(weatherData.wind)} km/h</li>
-                <li>Humidity: {Math.round(weatherData.humidity)}%</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
