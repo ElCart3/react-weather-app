@@ -11,7 +11,7 @@ export default function WeatherInfo(props) {
       <h1>{props.data.city}</h1>
       <div className="row middle">
         <div className="col d-flex weather-temperature align-items-center">
-          <div className="col offset-1">
+          <div className="col">
             <WeatherTemperature celsius={props.data.temperature} />
           </div>
           <div className="col">
