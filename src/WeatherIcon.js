@@ -12,12 +12,12 @@ export default function WeatherIcon(props) {
     "04n": "/images/degry.03.png",
     "09d": "/images/degry.10.png",
     "09n": "/images/degry.10.png",
-    "010d": "/images/degry.10.png",
-    "010n": "/images/degry.10.png",
-    "011d": "/images/degry.11.png",
-    "011n": "/images/degry.11.png",
-    "013d": "/images/degry.13.png",
-    "013n": "/images/degry.13.png",
+    "10d": "/images/degry.10.png",
+    "10n": "/images/degry.10.png",
+    "11d": "/images/degry.11.png",
+    "11n": "/images/degry.11.png",
+    "13d": "/images/degry.13.png",
+    "13n": "/images/degry.13.png",
     "50d": "/images/degry.50.png",
   };
   return (
