@@ -3,6 +3,7 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo.js";
 import WeatherForecast from "./WeatherForecast.js";
 import "./Weather.css";
+import LoadingIcons from "react-loading-icons";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
@@ -70,6 +71,10 @@ export default function Weather(props) {
   } else {
     search();
 
-    return "Loading...";
+    return (
+      <div className="loading-message">
+        <LoadingIcons.TailSpin />
+      </div>
+    );
   }
 }
