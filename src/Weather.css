@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 80px;
+  font-size: 75px;
   margin-top: 20px;
 }
 
@@ -27,7 +27,7 @@ li {
 
 small {
   margin-left: 30px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
 }
 
@@ -41,7 +41,7 @@ small a {
   padding: 5px;
   border: 1px solid #ffffff;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .search,
@@ -57,7 +57,7 @@ small a {
 }
 
 .date-time {
-  font-size: 20px;
+  font-size: 17px;
   margin: 10px;
 }
 
@@ -73,7 +73,7 @@ small a {
 
 .current-temp {
   margin-left: 12px;
-  font-size: 85px;
+  font-size: 80px;
   font-weight: bold;
 }
 
@@ -84,7 +84,7 @@ small a {
 }
 
 .details {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .description {
@@ -95,7 +95,7 @@ small a {
   text-align: center;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 660px) {
   .form-search,
   .form-submit {
     font-size: 15px;
@@ -109,6 +109,6 @@ small a {
   }
 
   .details {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
